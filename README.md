@@ -11,7 +11,7 @@ This repository contains 4 files
 3. run_analysis.R : the script to process the raw data into tidy data set.
 4. NewTidyData    : the final tidy data set contain 180 observations with 81 variables.
 
-# Following are steps to process raw data into tidy data set for following 5 goals:
+# Following are steps to process raw data into tidy data set to achieve following 5 goals:
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
