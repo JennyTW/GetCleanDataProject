@@ -4,8 +4,7 @@ author: "Jenny Chen"
 
 ---
 
-## Project Description
-Human Activity Recognition Using Smartphones Data Set
+#Human Activity Recognition Using Smartphones Data Set
 
 ##Study design and data processing
 
