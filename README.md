@@ -11,7 +11,13 @@ This repository contains 4 files
 3. run_analysis.R : the script to process the raw data into tidy data set.
 4. NewTidyData    : the final tidy data set contain 180 observations with 81 variables.
 
-# Following are steps to process raw data into tidy data set
+# Following are steps to process raw data into tidy data set for following 5 goals:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ##(1) load all txt file into R objects.
 In this step, we load 6 txt files need to be used for following steps, inclding:
@@ -49,3 +55,4 @@ Replace the value in Activity column with descriptive activity names.
 
 Use dplyr package to group the data set by each subject and each activity, then get the average of measurements for each group.
 Finally, load the final tidy data into new text file :NewTidyData.txt 
+
