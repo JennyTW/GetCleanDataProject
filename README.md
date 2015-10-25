@@ -9,7 +9,7 @@ This repository contains 4 files
 1. README.md      : describing how the script works.
 2. CodeBook.md    : describing the variables.
 3. run_analysis.R : the script to process the raw data into tidy data set.
-4. NewTidyData    : the final tidy data set contain 180 observations with 81 variables.
+4. NewTidyData    : the final tidy data set containing 180 observations with 81 variables.
 
 # Following are steps to process raw data into tidy data set to achieve following 5 goals:
 
