@@ -13,17 +13,26 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-###Collection of the raw data
+We use run_analysis.R to process the raw data in to tidy data set, containing 180 observations with 80 variables.
+
+### Raw data 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-###Use run_analysis.R to create the tidy datafile
+### Tidy data set
 https://github.com/JennyTW/GetCleanDataProject/blob/master/NewTidyData.txt
 
 ###Variables in the tidy dataset
 
-- SubjectID: 30 volunteers within an age bracket of 19-48 years.Its range is from 1 to 30.
-- Activity :WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-- Average of each measurements for each activity and each subject :
+
+- V1     : SubjectID: 30 volunteers within an age bracket of 19-48 years.Its range is from 1 to 30.
+- V2     : Activity the person performed while wearing a smartphone on the waist.
+        1. WALKING
+        2. WALKING_UPSTAIRS
+        3. WALKING_DOWNSTAIRS
+        4. SITTING
+        5. STANDING
+        6. LAYING
+- V3~V81 : Average of each feature measurement for each activity and each subject :
 
 [1] "tBodyAcc-mean()-X"               "tBodyAcc-mean()-Y"               "tBodyAcc-mean()-Z"              
 [4] "tBodyAcc-std()-X"                "tBodyAcc-std()-Y"                "tBodyAcc-std()-Z"               
@@ -84,7 +93,6 @@ The set of variables that were estimated from these signals are:
 
 mean(): Mean value
 std(): Standard deviation
-
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
