@@ -53,4 +53,4 @@ data_All_df<-tbl_df(data_All)
 data_All_df1<-group_by(data_All_df,SubjectID,Activity)
 data_All_df2<-summarise_each(data_All_df1,funs(mean))
 
-write.table(data_All_df2, "NewTidyData.txt", row.name=TRUE)
+write.table(data_All_df2, "NewTidyData.txt", row.name=FALSE)
